@@ -507,7 +507,7 @@ body {
 }
 
 #sobre h2 {
-  color: #b4002f;
+  color: #9e0606;
   margin-bottom: 10px;
 }
 
@@ -518,10 +518,10 @@ body {
 }
 
 .info-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  display: flex;
+     justify-content: center;  
+     justify-items: center;
+  gap: 40px;
 }
 
 .info-card {
