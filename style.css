@@ -500,6 +500,57 @@ body {
     color: hsl(var(--muted-foreground));
     margin-bottom: 1rem;
 }
+/*INFOR INPORT*/
+#sobre {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#sobre h2 {
+  color: #b4002f;
+  margin-bottom: 10px;
+}
+
+#sobre p {
+  color: #444;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+  max-width: 300px;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  background: #b4002f;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  font-size: 20px;
+}
+
 
 /* ===== PRODUCTS ===== */
 .products-grid {
