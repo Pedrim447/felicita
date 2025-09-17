@@ -1027,6 +1027,12 @@ body {
 }
 
 @media (max-width: 767px) {
+   .info-container {
+    display: flex;
+    flex-direction: column;
+    
+
+   }
     .hero-cta {
         align-items: stretch;
     }
