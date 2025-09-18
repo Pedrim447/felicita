@@ -16,12 +16,12 @@
     --accent: 43 96% 56%;
     --accent-foreground: 0 0% 9%;
     --border: 214.3 31.8% 91.4%;
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
 
     /* Gradientes */
-    --gradient-hero: hsl(0, 85%, 24%);
+    --gradient-hero: linear-gradient(to bottom, hsl(0, 90%, 27%), hsl(0, 61%, 55%));
     --gradient-accent:  hsl(45 96% 64%);
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
 
