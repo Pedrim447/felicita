@@ -3,7 +3,7 @@ let mobileMenuOpen = false;
 
 // ===== INICIALIZAÇÃO =====
 document.addEventListener('DOMContentLoaded', function() {
-   
+    
     initializeScrollEffects();
     initializeButtonEffects();
     initializeLazyLoading();
@@ -69,7 +69,7 @@ function handleWhatsAppContact(type = 'geral') {
 // ===== GOOGLE MAPS =====
 function openMaps() {
     const address = "Outeiro da Cruz, São Luís MA, 65035-520, Brasil";
-    const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    const url = `https://www.google.com/maps/place/FELICIT%C3%81+BOX+SLZ/@-2.5521715,-44.2550918,17z/data=!4m15!1m8!3m7!1s0x7f68e56abb1993b:0x16fc07622f57aa09!2sR.+Primeiro+de+Maio+-+Monte+Castelo,+S%C3%A3o+Lu%C3%ADs+-+MA,+65035-520!3b1!8m2!3d-2.5317948!4d-44.2809128!16s%2Fg%2F1ymtr2767!3m5!1s0x7f68fc03bee000f:0x7c3db74421e0b285!8m2!3d-2.5528874!4d-44.2526468!16s%2Fg%2F11y2nc5zqz?entry=ttu&g_ep=EgoyMDI1MDkxNi4wIKXMDSoASAFQAw%3D%3D=${encodeURIComponent(address)}`;
     window.open(url, '_blank');
 }
 
@@ -80,7 +80,7 @@ function initializeScrollEffects() {
         const header = document.querySelector('.header');
         const scrolled = window.pageYOffset;
         
-        if (scrolled > 90) {
+        if (scrolled > 50) {
             header.style.background = 'hsl(var(--background) / 0.98)';
             header.style.boxShadow = '0 2px 20px hsl(var(--primary) / 0.1)';
         } else {
@@ -92,7 +92,7 @@ function initializeScrollEffects() {
     // Efeito parallax no hero
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
-        const heroBackground = document.querySelector('.home');
+        const heroBackground = document.querySelector('.hero-bg img');
         
         if (heroBackground && scrolled < window.innerHeight) {
             const rate = scrolled * -0.3;
