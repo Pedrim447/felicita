@@ -1,5 +1,13 @@
-ttonEffects();
+// ===== VARIÁVEIS GLOBAIS =====
+let mobileMenuOpen = false;
+
+// ===== INICIALIZAÇÃO =====
+document.addEventListener('DOMContentLoaded', function() {
+    initializeAnimations();
+    initializeScrollEffects();
+    initializeButtonEffects();
     initializeLazyLoading();
+});
 
 // ===== MENU MOBILE =====
 function toggleMobileMenu() {
@@ -72,7 +80,7 @@ function initializeScrollEffects() {
         const header = document.querySelector('.header');
         const scrolled = window.pageYOffset;
         
-        if (scrolled > 50) {
+        if (scrolled > 90) {
             header.style.background = 'hsl(var(--background) / 0.98)';
             header.style.boxShadow = '0 2px 20px hsl(var(--primary) / 0.1)';
         } else {
@@ -84,7 +92,7 @@ function initializeScrollEffects() {
     // Efeito parallax no hero
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
-        const heroBackground = document.querySelector('.hero-bg img');
+        const heroBackground = document.querySelector('.hero-bg');
         
         if (heroBackground && scrolled < window.innerHeight) {
             const rate = scrolled * -0.3;
