@@ -539,8 +539,8 @@ body {
 }
 
 .icon {
-  background: #b4002f;
-  color: #fff;
+  background: var(--gradient-hero);
+  color: hsl(var(--primary-foreground));
   width: 50px;
   height: 50px;
   display: flex;
@@ -691,6 +691,7 @@ body {
     background: hsl(var(--card));
     border-radius: 1rem;
     padding: 1.5rem;
+    align-items: center;
     text-align: center;
     box-shadow: var(--shadow-soft);
     transition: var(--transition-smooth);
@@ -1027,7 +1028,14 @@ body {
 }
 
 @media (max-width: 767px) {
-   .info-container {
+    .location-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1057,6 +1065,9 @@ body {
         text-align: center;
     }
 }
+
+
+
 
 /* ===== ANIMAÇÕES ADICIONAIS ===== */
 @keyframes ripple {

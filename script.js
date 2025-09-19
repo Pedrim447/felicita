@@ -3,7 +3,7 @@ let mobileMenuOpen = false;
 
 // ===== INICIALIZAÇÃO =====
 document.addEventListener('DOMContentLoaded', function() {
-    initializeAnimations();
+   
     initializeScrollEffects();
     initializeButtonEffects();
     initializeLazyLoading();
@@ -92,7 +92,7 @@ function initializeScrollEffects() {
     // Efeito parallax no hero
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
-        const heroBackground = document.querySelector('.hero-bg');
+        const heroBackground = document.querySelector('.home');
         
         if (heroBackground && scrolled < window.innerHeight) {
             const rate = scrolled * -0.3;
